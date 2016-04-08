@@ -1,0 +1,240 @@
+div.list-view-component {
+  height: 100%;
+  width: 100%;
+}
+
+div.list-view-component div.list-view-container {
+  padding-top: 10px;
+}
+
+div.list-view-component div.list-view-container ul.list-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.list-view-component div.list-view-container ul.list-menu li.list-menu-item div.item-display-container {
+  padding: 10px;
+}
+
+div.list-view-component div.list-view-container ul.list-menu li.list-menu-item div.item-display-container a.clickable-menu-item {
+  cursor: pointer;
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+div.list-view-component div.list-view-container ul.list-menu li.list-menu-item div.item-display-container a.clickable-menu-item.selected {
+  color: #2568a2;
+  text-decoration: underline;
+}
+
+div.list-view-component div.list-view-container ul.list-menu li.list-menu-item div.item-display-container a.clickable-menu-item:hover {
+  color: #2568a2;
+}
+
+div.list-view-component div.list-view-container ul.list-menu li.list-menu-item div.item-display-container a.removeable-menu-item {
+  margin-left: 20px;
+  color: #aaaaaa;
+}
+
+div.list-view-component div.list-view-container ul.list-menu li.list-menu-item div.item-display-container a.removeable-menu-item:hover {
+  color: #db283a;
+}
+
+div.list-view-component div.list-view-container ul.list-menu li.list-menu-item div.item-display-container a.removeable-menu-item i {
+  color: inherit;
+}
+
+div.splitter-component {
+  height: 100%;
+  width: 100%;
+}
+
+div.splitter-component div.left-splitter {
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+div.splitter-component div.left-splitter.dragging {
+  transition: none;
+}
+
+div.splitter-component div.left-splitter.closed div.toggle-header {
+  display: none;
+}
+
+div.splitter-component div.left-splitter.closed div.toggler {
+  right: 40% !important;
+}
+
+div.splitter-component div.left-splitter div.toggle-container {
+  height: 50px;
+  position: relative;
+  background-color: #2568a2;
+  border-bottom: #1c4d78;
+}
+
+div.splitter-component div.left-splitter div.toggle-container div.toggle-header {
+  float: left;
+  margin-left: 10px;
+  height: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+div.splitter-component div.left-splitter div.toggle-container div.toggler {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0.5;
+  color: #ffffff;
+  z-index: 1023;
+  right: 10px;
+  line-height: 50px;
+}
+
+div.splitter-component div.left-splitter div.toggle-container div.toggler:hover {
+  opacity: 1;
+}
+
+div.splitter-component div.left-splitter div.view-container {
+  height: calc( 100% - 50px );
+  width: 100%;
+  background-color: #eeeeee;
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.15);
+}
+
+div.splitter-component div.right-splitter {
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+div.splitter-component div.right-splitter.dragging {
+  transition: none;
+}
+
+div.splitter-component div.right-splitter div.view-container {
+  height: inherit;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+div.splitter-component div.splitter-drag-handle {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 5px;
+  right: -5px;
+  cursor: col-resize;
+  z-index: 1;
+}
+
+div.splitter-component div.splitter-drag-handle .dragger {
+  position: absolute;
+  top: 45%;
+  color: #2568a2;
+  opacity: 0.5;
+  right: -5px;
+  height: 21px;
+  width: 5px;
+}
+
+div.splitter-component div.splitter-drag-handle .dragger:hover {
+  opacity: 1;
+}
+
+div.splitter-component.dark div.splitter-drag-handle .dragger {
+  color: #777777;
+}
+
+div.splitter-component.dark div.left-splitter div.toggle-container {
+  background-color: #262d37;
+  border-bottom: #111419;
+}
+
+div.splitter-component.dark div.left-splitter div.toggle-container div.toggle-header {
+  color: #ffffff;
+}
+
+div.splitter-component.dark div.left-splitter div.view-container {
+  background-color: #333a44;
+}
+
+div.tabs-component {
+  height: 100%;
+  width: 100%;
+}
+
+div.tabs-component div.tab-button-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+  white-space: nowrap;
+}
+
+div.tabs-component div.tab-button-container div.tab-button {
+  cursor: pointer;
+  height: inherit;
+  text-align: center;
+  float: left;
+}
+
+div.tabs-component div.tab-button-container div.tab-button:hover span.tab-title {
+  color: #2568a2;
+}
+
+div.tabs-component div.tab-button-container div.tab-button span.tab-title {
+  font-weight: 600;
+  color: #aaaaaa;
+}
+
+div.tabs-component div.tab-button-container div.tab-button span.tab-title.active {
+  color: #2568a2;
+}
+
+div.tabs-component div.tab-active-slider {
+  width: 100%;
+}
+
+div.tabs-component div.tab-active-slider div.slide-bordering {
+  bottom: 0;
+  height: 2px;
+  margin-top: -2px;
+  position: relative;
+  transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  background-color: #2568a2;
+}
+
+div.tabs-component div.tab-content-container div.tab-content {
+  height: calc(100% - 20px );
+  padding: 10px;
+}
+
+div.tabs-component.dark div.tab-active-slider div.slide-bordering {
+  background-color: #ffffff;
+}
+
+div.tabs-component.dark div.tab-button-container {
+  background-color: #333a44;
+}
+
+div.tabs-component.dark div.tab-button-container div.tab-button:hover span.tab-title {
+  color: #ffffff;
+}
+
+div.tabs-component.dark div.tab-button-container div.tab-button span.tab-title {
+  color: #aaaaaa;
+}
+
+div.tabs-component.dark div.tab-button-container div.tab-button span.tab-title.active {
+  color: #ffffff;
+}
+
+div.tabs-component.dark div.tab-content-container div.tab-content {
+  background-color: #333a44;
+  color: #ffffff;
+}

@@ -1,0 +1,130 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open sans','Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.125em;
+  color: #333333;
+  line-height: 1.5em;
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+#app, #demo-page {
+  height: 100%;
+  width: 100%;
+}
+
+div.demo-action-bar {
+  height: 50px;
+  width: 100%;
+  background-color: #555;
+}
+
+h1.title {
+  float: left;
+  font-size: 0.8em;
+  margin: 0;
+  padding-top: 10px;
+  margin: 0 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+div.demo-view {
+  height: calc(100% - 50px);
+  width: 100%;
+}
+
+div.select-container {
+  padding: 10px;
+  float: right;
+}
+
+div.select-container label {
+  font-size: 0.7em;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+div.select-container select {
+  height: 30px;
+  outline: none !important;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  min-width: 150px;
+  text-align: right;
+  background-color: #ffffff;
+}
+
+div.demo-container  {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+div.demo-title-container {
+  height: 50px;
+  width: 100%;
+  background-color: #eeeeee;
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.15);
+}
+
+div.demo-title-container h2.title {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #2568a2;
+  margin: 0;
+  line-height: 50px;
+  padding-left: 10px;
+}
+
+div.demo-component-container {
+  height: calc( 100% - 60px );
+  width: 100%;
+  overflow: auto;
+}
+
+ul.menu-display {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.menu-display li {
+  padding: 7px 10px;
+}
+
+ul.menu-display li a {
+  text-decoration: none;
+  color: #777777;
+}
+
+ul.menu-display li a.selected {
+  color: #2568a2;
+  text-decoration: underline;
+}
+
+ul.menu-display li a:hover {
+  text-decoration: underline;
+  color: #2568a2;
+}
+
+ul.unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.unstyled li label {
+  font-weight: bold;
+  margin-right: 5px;
+}
